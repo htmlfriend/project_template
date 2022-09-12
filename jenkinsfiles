@@ -11,12 +11,12 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh root@mint \'hostname\''
+                sh 'ssh mint@mint \'hostname\''
             }
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@mint \'uptime\''
+                sh 'ssh mint@mint \'uptime\''
             }
         }
     }
